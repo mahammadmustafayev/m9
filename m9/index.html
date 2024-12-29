@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/m9-removebg-preview.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>m9</title>
+</head>
+<body>
+    <div class="main">
+        <div class="balance">
+            <div class="current">
+                <p class="text">m9 balansim</p>
+                <h1 id="balanceValue" class="balance-value"></h1>
+                <div class="functions">
+                    <div class="increase" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <h1><i class="bi bi-plus-lg"></i> Balans artımı</h1>
+                    </div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="exampleModalLabel">M9 Balance</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <label for="increase" class="form-label">Balansı artırın</label>
+                                    <input type="number" class="form-control increase-input" id="increase" >
+                                  </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                              <button id="increaseBtn" type="button" class="btn btn-success">Add</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="payment">
+                        <h1><i class="bi bi-arrow-up-right"></i> Köçürtmək</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="services">
+            <a href="payments.html">
+                <h1><i class="bi bi-wallet2"></i> Mənim ödənişlərim <i class="bi bi-chevron-right"></i></h1>
+            </a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
